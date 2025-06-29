@@ -1,0 +1,17 @@
+<cyber>
+    <module>
+        <name>common_perception</name>
+        <dag_conf>/opt/apollo/neo/packages/ZL1-dev/latest/perception/conf/perception.dag</dag_conf>
+        <process_name>common_perception</process_name>
+    </module>
+    <module>
+        <name>common_collect</name>
+        <dag_conf>/opt/apollo/neo/packages/ZL1-dev/latest/collect/conf/collect.dag</dag_conf>
+        <process_name>common_collect</process_name>
+    </module>
+    <module>
+        <name>common_planning</name>
+        <dag_conf>/opt/apollo/neo/packages/ZL1-dev/latest/planning/conf/planning.dag</dag_conf>
+        <process_name>common_planning</process_name>
+    </module>
+</cyber>

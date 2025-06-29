@@ -1,0 +1,15 @@
+module_config {
+    module_library : "/opt/apollo/neo/packages/ZL1-dev/latest/lib/lib_collect.so"
+    components {
+        class_name : "CollectCommonComponent"
+        config {
+            name : "common_collect"
+            readers {
+                channel: "/apollo/control/ToCollect"
+            }
+            readers {
+                channel: "/apollo/camera/data"
+            }
+        }
+    }
+ }

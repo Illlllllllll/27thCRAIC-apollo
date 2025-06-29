@@ -1,0 +1,15 @@
+module_config {
+    module_library : "/opt/apollo/neo/packages/ZL1-dev/latest/lib/lib_planning.so"
+    components {
+        class_name : "PlanningCommonComponent"
+        config {
+            name : "common_planning"
+            readers {
+                channel: "/apollo/perception/data"
+            }
+            readers {
+                channel: "/apollo/radar/data"
+            }
+        }
+    }
+ }

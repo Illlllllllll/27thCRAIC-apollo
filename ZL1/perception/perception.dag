@@ -1,0 +1,15 @@
+module_config {
+    module_library : "/opt/apollo/neo/packages/ZL1-dev/latest/lib/lib_perception.so"
+    components {
+        class_name : "PerceptionCommonComponent"
+        config {
+            name : "common_perception"
+            readers {
+                channel: "/apollo/control/ToPerception"
+            }
+            readers {
+                channel: "/apollo/camera/data"
+            }
+        }
+    }
+ }

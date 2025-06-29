@@ -1,0 +1,38 @@
+syntax = "proto2";
+
+package apollo.ZL1.proto;
+
+message Chatter {
+  optional uint64 driving_pattern = 1;
+  optional uint64 ctrl_gear = 2;
+  optional uint64 real_speed = 3;
+  optional uint64 ctrl_speed = 4;
+  optional uint64 ctrl_angle = 5;
+  optional uint64 ctrl_brake = 6;
+  optional uint64 ctrl_park = 7;
+  optional uint64 camera_id = 8;
+};
+
+message Perception {
+  optional bytes camera1_data = 1;
+  optional bytes camera2_data = 2;
+  optional bytes camera3_data = 3;
+  optional uint64 radar_data = 4;
+};
+
+message Result {
+  optional uint64 cls_result_1 = 1;
+  optional uint64 cls_result_2 = 2;
+  optional string det_result_1 = 3;
+  optional string det_result_2 = 4;
+  optional uint64 image_monitor = 5;
+  optional uint64 ctrl_park = 6;
+};
+
+message Driver {
+  optional uint64 target_gear = 1;
+  optional uint64 target_speed = 2;
+  optional uint64 target_angle = 3;
+  optional uint64 target_brake = 4;
+}
+

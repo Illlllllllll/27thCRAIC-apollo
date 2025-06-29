@@ -1,0 +1,16 @@
+<package>
+  <name>ZL1</name>
+  <version>1.0.0</version>
+  <description>
+   ZL1
+  </description>
+  <maintainer email="AD-platform">AD-platform@baidu.com</maintainer>
+  <type>module</type>
+  <src_path>//ZL1</src_path>
+  <license>BSD</license>
+  <author>Apollo</author>
+  <depend type="binary"  repo_name="cyber">cyber-dev</depend>
+  <depend lib_names="protobuf" repo_name="com_google_protobuf">3rd-protobuf-dev</depend>
+  <depend lib_names="boost" repo_name="local_boost">3rd-boost-dev</depend>
+  <builder>bazel</builder>
+</package>
